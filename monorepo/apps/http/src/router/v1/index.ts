@@ -1,12 +1,13 @@
 import express, { Router } from "express"
+import { spaceRouter } from "./space"
+import { adminRouter } from "./admin"
+import { userRouter } from "./users"
 const router = Router()
 const app = express()
 
 // signup
 app.post('/sigup' , (req , res)=> {
-    res.json({
-        message : "inside signup"
-    })
+
 })
 
 // signin
