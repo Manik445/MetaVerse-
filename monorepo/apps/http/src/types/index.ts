@@ -62,3 +62,12 @@ export const CreateMapSchema = z.object({
         y: z.number(),
     })),
 })
+
+// middlewares 
+declare global {
+    namespace Express {
+        interface Request {
+            userId: string
+        }
+    }
+}
